@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 
 // MongoDB connection setup
 mongoose.connect('mongodb+srv://abdallaatef12:Aatef2000@tazkaracluster.1hsop.mongodb.net/tazkara');
